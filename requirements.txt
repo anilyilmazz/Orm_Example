@@ -2,3 +2,4 @@ sqlalchemy
 bs4
 lxml
 requests
+flask

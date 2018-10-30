@@ -2,7 +2,6 @@ from sqlalchemy import create_engine
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker,relationship
-
 Base = declarative_base()
 
 class User(Base):
@@ -17,7 +16,9 @@ class User(Base):
         return "User(id='%s',name='%s', fullname='%s', password='%s')" % (
                              self.id,self.name, self.fullname, self.password)
 
-engine = create_engine('sqlite:///test.db', echo=True)
+
+
+engine = create_engine('sqlite:///test.db', echo=True )
 Base.metadata.create_all(bind=engine)
 Session = sessionmaker(bind=engine)
 

@@ -1,4 +1,4 @@
-from model import User,Session
+from db_model import User,Session
 
 session = Session()
 

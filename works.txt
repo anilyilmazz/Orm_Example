@@ -1,0 +1,7 @@
+make user class
+
+user authentication
+admin page authentication
+movie crud admin
+user like comment movie
+
